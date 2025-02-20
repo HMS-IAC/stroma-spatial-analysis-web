@@ -1,1 +1,1 @@
-# stroma-spatial-analysis-web
+# An image analysis pipeline to quantify the spatial distribution of cell markers in stroma-rich tumors
