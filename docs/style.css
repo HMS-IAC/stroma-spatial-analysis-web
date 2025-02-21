@@ -2,7 +2,7 @@
 body {
   font-family: "Arial", sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 40px;
   background-color: #ffffff;
   color: #333;
   display: flex;
@@ -16,37 +16,32 @@ body {
   width: 90%;
   max-width: 1200px;
   background: white;
-  margin: 40px 0;
+  align-items: center;
 }
 
 /* Left: Figure container */
 .figure-container {
   flex: 1;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  padding-right: 20px;
 }
 
 .figure-container img {
   max-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .caption {
   font-size: 14px;
   color: #666;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 /* Right: Content container */
 .content {
   flex: 1;
-  padding: 40px;
   text-align: left;
-  background-color: white;
 }
 
 header {
@@ -68,9 +63,10 @@ h2 {
 p {
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 10px;
 }
 
-/* Link styling */
+/* Links */
 a {
   color: #0645ad;
   text-decoration: none;
@@ -88,11 +84,12 @@ a:hover {
   }
 
   .figure-container {
-    padding: 10px;
+    padding-right: 0;
+    padding-bottom: 20px;
   }
 
   .content {
-    padding: 20px;
+    padding: 0;
   }
 
   h1 {
