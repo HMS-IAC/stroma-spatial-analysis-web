@@ -2,12 +2,21 @@
 body {
   font-family: "Arial", sans-serif;
   margin: 0;
-  padding: 40px;
+  padding: 0;
   background-color: #ffffff;
   color: #333;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main content wrapper */
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 0;
 }
 
 /* Main container: Two-column layout */
@@ -27,9 +36,9 @@ body {
 }
 
 .figure-container img {
-  max-width: 70%;  /* Adjust this value to make the figure smaller */
+  max-width: 70%;
   display: block;
-  margin: 0 auto;  /* Centers the image */
+  margin: 0 auto;
   border-radius: 0;
   box-shadow: none;
 }
@@ -78,14 +87,20 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Footer styling */
+/* Sticky Footer */
 footer {
-  margin-top: 40px;
-  padding: 20px;
-  text-align: center;
   width: 100%;
   background: #f5f5f5;
+  padding: 15px 0;
+  text-align: center;
   font-size: 14px;
+  position: relative;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+  padding: 5px;
 }
 
 footer a {
