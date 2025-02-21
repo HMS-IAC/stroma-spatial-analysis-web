@@ -1,50 +1,85 @@
-/* Base styles */
+/* General page styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
-    color: #333;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: url('method_pipeline_figure_website.png') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+
+/* Overlay for better text readability */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+/* Header styling */
+header {
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+/* Content section */
+.content {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 40px auto;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 10px;
+}
+
+/* Figure container */
+.figure-container {
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  width: 80%;
+  max-width: 700px;
+  border-radius: 10px;
+}
+
+.figure-container img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Link styling */
+a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content, .figure-container {
+    width: 90%;
   }
-  
-  /* Header styles */
-  header {
-    margin-bottom: 40px;
+  h1 {
+    font-size: 24px;
   }
-  
-  /* Section styling */
-  section {
-    margin-bottom: 40px;
-  }
-  
-  h1, h2 {
-    color: #333;
-  }
-  
-  /* Figure placeholder */
-  .figure-placeholder {
-    width: 100%;
-    max-width: 600px;
-    height: 400px;
-    background-color: #e0e0e0;
-    border: 2px dashed #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #666;
-    font-size: 1.2em;
-    margin: 20px auto;
-  }
-  
-  /* Link styling */
-  a {
-    color: #0645ad;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
+}

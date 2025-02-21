@@ -7,29 +7,30 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="overlay"></div> <!-- Dark overlay for readability -->
+  
   <header>
-    <h1>An image analysis pipeline to quantify the spatial distribution of cell markers in stroma-rich tumors</h1>
-    <p><strong>Authors:</strong> Antoine A. Ruzette (1), Nina Kozlova (2,3), Taru Muranen (2,3) and Simon F. Nørrelykke (1)*</p>
+    <h1>An Image Analysis Pipeline to Quantify the Spatial Distribution of Cell Markers in Stroma-Rich Tumors</h1>
+    <p><strong>Authors:</strong> Antoine A. Ruzette<sup>1</sup>, Nina Kozlova<sup>2,3</sup>, Taru Muranen<sup>2,3</sup>, and Simon F. Nørrelykke<sup>1</sup>*</p>
     <p><strong>Affiliations:</strong><br>
-      (1) Department of Systems Biology, Harvard Medical School, Boston, MA, USA<br>
-      (2) Department of Genetics, Cancer Research Institute, Beth Israel Deaconess Medical Center, Boston, MA, USA<br>
-      (3) Harvard Medical School, Boston, MA, USA<br>
-      * corresponding author: simon@hms.harvard.edu
+      <sup>1</sup> Department of Systems Biology, Harvard Medical School, Boston, MA, USA<br>
+      <sup>2</sup> Department of Genetics, Cancer Research Institute, Beth Israel Deaconess Medical Center, Boston, MA, USA<br>
+      <sup>3</sup> Harvard Medical School, Boston, MA, USA<br>
+      * Corresponding author: <a href="mailto:simon@hms.harvard.edu">simon@hms.harvard.edu</a>
     </p>
   </header>
 
-  <section>
+  <section class="content">
     <h2>Abstract</h2>
     <p>
       Quantifying the spatial arrangement of cell populations in stroma-rich solid tumors is essential for assessing how the cell–stroma interactions react to treatment candidates and other genetic perturbations. Advances in imaging have led researchers to collect large batches of whole-slide images, underscoring the need for reproducible and scalable computational methods. We present a robust, end-to-end, QuPath image analysis pipeline that facilitates the study of the spatial distribution of cellular markers relative to modeled stromal borders in whole-slide, multi-channel fluorescence microscopy images. We successfully applied our pipeline to pancreatic cancer xenografts, revealing the spatial distribution of two populations of cells tagged with cellular markers (pNDRG1 and Ki67) in relation to a modeled stromal border – this application case illustrates the potential of our pipeline in facilitating robust large-scale spatial analyses in batches of multiplexed whole-slide images. Code and data can be accessed on <a href="https://github.com/HMS-IAC/stroma-spatial-analysis" target="_blank">GitHub</a>.
     </p>
   </section>
 
-  <section>
-    <h2>Figure Placeholder</h2>
-    <div class="figure-placeholder">
-      Figure 1 Placeholder
-    </div>
+  <section class="figure-container">
+    <h2>Figure 1</h2>
+    <img src="static/images/method_pipeline_figure_website.png" alt="Figure 1a: Graphical abstract of the spatial model of stroma-rich tumors">
+    <p>Graphical model showing cell distribution relative to stromal borders.</p>
   </section>
 </body>
 </html>
