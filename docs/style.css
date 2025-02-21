@@ -104,6 +104,7 @@ footer {
 footer a {
   color: #333;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 footer a:hover {
@@ -111,7 +112,11 @@ footer a:hover {
 }
 
 footer i {
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+footer a:hover i {
+  transform: scale(1.1);
 }
 
 /* Responsive adjustments for smaller screens */
@@ -132,5 +137,9 @@ footer i {
 
   h1 {
     font-size: 22px;
+  }
+
+  footer {
+    font-size: 20px;
   }
 }
