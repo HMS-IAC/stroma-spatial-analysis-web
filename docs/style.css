@@ -26,8 +26,9 @@ body {
 }
 
 .figure-container img {
-  max-width: 85%;
+  max-width: 60%;  /* Adjust this value to make the figure smaller */
   display: block;
+  margin: 0 auto;  /* Centers the image */
   border-radius: 0;
   box-shadow: none;
 }
