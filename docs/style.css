@@ -3,70 +3,78 @@ body {
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  color: #fff;
-  text-align: center;
-  background: url('method_pipeline_figure_website.png') no-repeat center center fixed;
-  background-size: cover;
-  position: relative;
+  background-color: #f5f5f5;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-/* Overlay for better text readability */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: -1;
-}
-
-/* Header styling */
-header {
-  padding: 40px;
-  background: rgba(0, 0, 0, 0.7);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-}
-
-h1 {
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 16px;
-  margin: 5px 0;
-}
-
-/* Content section */
-.content {
-  padding: 30px;
-  background: rgba(0, 0, 0, 0.6);
-  margin: 40px auto;
-  width: 80%;
-  max-width: 700px;
+/* Main container: Two-column layout */
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 1200px;
+  background: white;
   border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Figure container */
+/* Left: Figure container */
 .figure-container {
-  margin: 30px auto;
+  flex: 1;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.6);
-  width: 80%;
-  max-width: 700px;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #eeeeee;
 }
 
 .figure-container img {
   max-width: 100%;
   border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Link styling */
+.caption {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Right: Content container */
+.content {
+  flex: 1;
+  padding: 40px;
+  text-align: left;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Links */
 a {
-  color: #ffcc00;
+  color: #0645ad;
   text-decoration: none;
 }
 
@@ -74,12 +82,22 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
-  .content, .figure-container {
-    width: 90%;
+  .container {
+    flex-direction: column;
+    text-align: center;
   }
+
+  .figure-container {
+    padding: 10px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
   h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
