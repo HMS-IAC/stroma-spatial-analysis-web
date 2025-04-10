@@ -15,3 +15,6 @@ dependencies = [
     "seaborn>=0.13.2",
     "setuptools>=75.8.0",
 ]
+
+[tool.setuptools]
+packages = ["analysis", "qupath_scripts"]
