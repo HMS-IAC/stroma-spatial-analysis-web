@@ -13,10 +13,6 @@ dist/
 build/
 *.egg-info/
 
-# Jupyter Notebook
-.ipynb_checkpoints
-*.ipynb
-
 # IDE specific files
 .idea/
 .vscode/
