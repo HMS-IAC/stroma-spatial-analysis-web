@@ -32,7 +32,7 @@ body {
 
 /* Left: Figure container */
 .figure-container {
-  flex: 1;
+  flex: 1.5;
   padding-right: 20px;
   display: flex;
   align-items: center;
@@ -40,7 +40,7 @@ body {
 }
 
 .figure-container img {
-  max-width: 100%;
+  max-width: 150%;
   height: auto;
   display: block;
   margin: 0 auto;
