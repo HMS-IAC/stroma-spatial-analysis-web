@@ -26,17 +26,22 @@ body {
   width: 90%;
   max-width: 1200px;
   background: white;
-  align-items: center;
+  align-items: stretch;
+  min-height: 100%;
 }
 
 /* Left: Figure container */
 .figure-container {
   flex: 1;
   padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .figure-container img {
-  max-width: 70%;
+  max-width: 100%;
+  height: auto;
   display: block;
   margin: 0 auto;
   border-radius: 0;
