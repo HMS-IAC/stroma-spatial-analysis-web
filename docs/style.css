@@ -24,8 +24,8 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
-  max-width: 1200px;
-  background: white;
+  max-width: 1400px;
+  background: 0white;
   align-items: stretch;
   min-height: 100%;
 }
@@ -40,7 +40,7 @@ body {
 }
 
 .figure-container img {
-  max-width: 130%;
+  max-width: 95%;
   height: auto;
   display: block;
   margin: 0 auto;
