@@ -23,7 +23,7 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   background: white;
   align-items: stretch;
@@ -32,7 +32,7 @@ body {
 
 /* Left: Figure container */
 .figure-container {
-  flex: 1.5;
+  flex: 1;
   padding-right: 20px;
   display: flex;
   align-items: center;
