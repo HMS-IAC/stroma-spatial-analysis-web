@@ -29,7 +29,7 @@ uv pip install -r requirements.txt
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15297453.svg)](https://zenodo.org/records/15297453)
 
-Raw images can be downloaded from the [Zenodo repository](https://zenodo.org/records/15297453).
+Raw images can be downloaded from https://zenodo.org/records/15297453.
 
 
 ## Distribution
@@ -46,7 +46,7 @@ To run the pipeline on your own data, follow the steps below:
     4. Export measurements as a CSV file using QuPath's export feature, or using the `export_cell_measurements.groovy` script.
     5. `stroma_annotator_sensitivity.groovy` to run sensitivity analysis on the stroma annotation.
     
-3. Run the Jupyter notebooks cell-by-cell in the `Python` folder to analyze the exported measurement tables. Make sure to adapt the paths to your data and results.
+3. Run the Jupyter notebooks cell-by-cell in the `analysis` folder to analyze the exported measurement tables. Make sure to adapt the paths to your data and results.
 
 ## License
 
