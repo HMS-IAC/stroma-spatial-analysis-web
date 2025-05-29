@@ -44,29 +44,66 @@ sigmas.each { sigma ->
         selectAnnotations()
 
         println("Parameters: Sigma: ${sigma}; FN_568_threshold: ${fn_threshold}")
-
+        
         def pixelClassifierString = """
         {
           "pixel_classifier_type": "OpenCVPixelClassifier",
           "metadata": {
-            "outputPixelType": "UINT8",
             "inputPadding": 0,
+            "inputResolution": {
+              "pixelWidth": {
+                "value": 1.2924389465034254,
+                "unit": "µm"
+              },
+              "pixelHeight": {
+                "value": 1.292467583464835,
+                "unit": "µm"
+              },
+              "zSpacing": {
+                "value": 1.0,
+                "unit": "z-slice"
+              },
+              "timeUnit": "SECONDS",
+              "timepoints": []
+            },
+            "inputWidth": 512,
+            "inputHeight": 512,
+            "inputNumChannels": 3,
+            "outputType": "CLASSIFICATION",
+            "outputChannels": [],
             "classificationLabels": {
               "0": {},
               "1": {
                 "name": "Stroma",
-                "color": [150, 200, 150]
+                "color": [
+                  150,
+                  200,
+                  150
+                ]
               }
             }
           },
           "op": {
             "type": "data.op.channels",
-            "colorTransforms": [{ "channelName": "TRITC FN" }],
+            "colorTransforms": [
+              {
+                "channelName": "TRITC FN"
+              }
+            ],
             "op": {
               "type": "op.core.sequential",
               "ops": [
-                { "type": "op.filters.gaussian", "sigmaX": ${sigma}, "sigmaY": ${sigma} },
-                { "type": "op.threshold.constant", "thresholds": [${fn_threshold}] }
+                {
+                  "type": "op.filters.gaussian",
+                  "sigmaX": ${sigma},
+                  "sigmaY": ${sigma}
+                },
+                {
+                  "type": "op.threshold.constant",
+                  "thresholds": [
+                    ${fn_threshold}
+                  ]
+                }
               ]
             }
           }
