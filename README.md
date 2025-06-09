@@ -46,7 +46,12 @@ To run the pipeline on your own data, follow the steps below:
     4. Export measurements as a CSV file using QuPath's export feature, or using the `export_cell_measurements.groovy` script.
     5. `stroma_annotator_sensitivity.groovy` to run sensitivity analysis on the stroma annotation.
     
-3. Run the Jupyter notebooks cell-by-cell in the `analysis` folder to analyze the exported measurement tables. Make sure to adapt the paths to your data and results.
+3. Run the Jupyter notebooks cell-by-cell in the `template` folder to analyze the exported measurement tables. Make sure to adapt the paths to your data and results.
+    1. Exploratory analysis: [![Exploratory analysis](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antoineruzette/stroma-spatial-analysis-web/blob/main/analysis/template/exploratory-histograms.ipynb)
+    2. Statistical mapping of thresholds: [![Statistical mapping of thresholds](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antoineruzette/stroma-spatial-analysis-web/blob/main/analysis/template/best-fit-distributions.ipynb)
+    3. Confusion matrix: [![Confusion matrix](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antoineruzette/stroma-spatial-analysis-web/blob/main/analysis/template/confusion_matrix.ipynb)
+    4. Spatial analysis: [![Spatial analysis](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antoineruzette/stroma-spatial-analysis-web/blob/main/analysis/template/spatial_analysis.ipynb)
+    5. Sensitivity analysis: [![Sensitivity analysis](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/antoineruzette/stroma-spatial-analysis-web/blob/main/analysis/template/sensitivity_analysis.ipynb)
 
 ## License
 
