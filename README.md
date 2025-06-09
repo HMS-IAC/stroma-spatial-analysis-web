@@ -51,3 +51,10 @@ To run the pipeline on your own data, follow the steps below:
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
+## Citation
+
+If you use this pipeline, please cite the following paper:
+
+Ruzette AA, Kozlova N, Cruz KA, Muranen T, Nørrelykke SF. _An image analysis pipeline to quantify the spatial distribution of cell markers in stroma-rich tumors_. bioRxiv 2025.04.28.650414; doi: https://doi.org/10.1101/2025.04.28.650414

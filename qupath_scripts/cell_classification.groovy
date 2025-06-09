@@ -72,7 +72,7 @@ ker_thresholds.each { ker_threshold ->
         """
 
         // Define the file path to save the JSON, including the value of thresholds
-        def cellClassifierFilePath = "/Users/antoine/Harvard/IAC/image_analysis_paper_QP_projects/SUIT2_pNDRG1/project/thresholds/classifiers/cell_classifiers/cell_classifier_ker-thresh${ker_threshold}_marker-thresh${marker_threshold}.json"
+        def cellClassifierFilePath = "./classifiers/cell_classifiers/cell_classifier_ker-thresh${ker_threshold}_marker-thresh${marker_threshold}.json"
 
         // Save the JSON string to a JSON file
         def cellClassifierFile = new File(cellClassifierFilePath)

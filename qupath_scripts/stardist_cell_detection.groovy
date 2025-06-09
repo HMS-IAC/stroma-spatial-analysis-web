@@ -31,7 +31,7 @@ selectAnnotations();
 // (Check credit & reuse info before downloading)
 
 // modify the path to the model
-def modelPath = "/Users/antoine/Harvard/IAC/image_analysis_paper_QP_projects/SUIT2_pNDRG1/project/classifiers/stardist/dsb2018_heavy_augment.pb"
+def modelPath = "path/to/your/model/dsb2018_heavy_augment.pb"
 
 //def avgNucleusRadius = 2.5
 //def minNucleusArea = (Math.PI * (avgNucleusRadius)**2) / 1.5
