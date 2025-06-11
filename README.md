@@ -29,11 +29,11 @@ uv pip install -r requirements.txt
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15297453.svg)](https://zenodo.org/records/15297453)
 
-Raw images can be downloaded from https://zenodo.org/records/15297453.
+Raw images, QuPath projects and measurement tables can be downloaded from https://zenodo.org/records/15297453.
 
 
 ## Distribution
-Our image analysis pipeline is distributed as a collection of Groovy scripts for image processing in QuPath and Python Jupyter notebooks for statistical analysis and visualization.
+Our image analysis pipeline is distributed as a collection of Groovy scripts for image processing in QuPath and Python Jupyter notebooks for statistical analysis and visualization. The notebooks are also distributed as Colab notebooks--see links below.
 
 ## Running the pipeline on your own images
 To run the pipeline on your own data, follow the steps below:
@@ -60,6 +60,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Citation
 
-If you use this pipeline, please cite the following paper:
+Please cite as:
 
 Ruzette AA, Kozlova N, Cruz KA, Muranen T, Nørrelykke SF. _An image analysis pipeline to quantify the spatial distribution of cell markers in stroma-rich tumors_. bioRxiv 2025.04.28.650414; doi: https://doi.org/10.1101/2025.04.28.650414
